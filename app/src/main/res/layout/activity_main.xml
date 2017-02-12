@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button android:id="@+id/one"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/two"
+        android:onClick="one"/>
+
+    <Button android:id="@+id/two"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/three"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:padding="0px"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/six" />
+
+    <Button android:id="@+id/four"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_below="@+id/one"
+        android:layout_toEndOf="@+id/five" />
+
+    <Button android:id="@+id/five"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_below="@+id/one"
+        android:layout_alignStart="@+id/two" />
+
+    <Button android:id="@+id/six"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_below="@+id/two"
+        android:layout_toStartOf="@+id/two" />
+
+    <Button android:id="@+id/seven"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_alignTop="@+id/eight"
+        android:layout_alignStart="@+id/four" />
+
+    <Button android:id="@+id/eight"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_below="@+id/four"
+        android:layout_toStartOf="@+id/four" />
+
+    <Button android:id="@+id/nine"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="5px"
+        android:textSize="70px"
+        android:layout_below="@+id/five"
+        android:layout_toStartOf="@+id/five" />
+
+    <TextView android:id="@+id/dialogue"
+        android:layout_width="match_parent"
+        android:layout_below="@id/nine"
+        android:layout_height="wrap_content"
+        android:hint="Game Status"
+        android:gravity="center_horizontal"
+        android:textSize="50px"
+        android:layout_alignStart="@+id/six"
+        android:layout_alignEnd="@+id/seven"
+        android:textStyle="italic"/>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:text="Start  Tic-Tac-Toe  |>  "
+        android:textSize="50px"
+        android:layout_height="150px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="80px"
+        android:onClick="GameOn"
+        android:layout_below="@id/dialogue" />
+    <TextView
+        android:id="@+id/result_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outcome"
+        android:layout_below="@id/start"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="80px"
+        android:gravity="center"
+        android:textSize="50px"
+        android:textStyle="bold"
+        />
+
+    <TextView android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@id/result_show"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="10px"
+        android:hint="Result of the Game"
+        android:gravity="center"
+        android:textSize="45px"
+        android:textStyle="bold|italic"
+        android:background="#dddcdc" />
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="45px"
+        android:text="::INFORMATION:: \nPlayer 1 will play 'X' \nPlayer 2 will play 'O' \nClick on the above button to start a game \nThe outcome will be displayed automatically if or when the game finishes \nClick on the button again to start a new game \n The status of the game is updated on the fly, based on the moves made by the players "
+        android:layout_below="@id/result_text"/>
+
+
+</RelativeLayout>
