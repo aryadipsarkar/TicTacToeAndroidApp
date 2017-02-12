@@ -1,6 +1,5 @@
 # Tic-Tac-Toe
-A Android App implementing simple game of game of tic-tac-toe.The game will be played by two asynchronous Java worker threads playing against each other. The UI thread
-will be responsible for creating and starting these two worker threads. Each thread will take turns taking the
+An Android App implementing simple game of tic-tac-toe.The game will be played by two asynchronous Java worker threads playing against each other. The UI thread will be responsible for creating and starting these two worker threads. Each thread will take turns taking the
 following actions:<br/>
 1. Figuring out the next move</br>
 2. Communicating the move to the UI thread, which will then update the device’s display<br/>
